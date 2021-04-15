@@ -1,0 +1,162 @@
+%Optics Cheat Paper for Mid
+\documentclass[10pt,a4paper]{article}
+\linespread{1}
+\usepackage[UTF8]{ctex}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{top=0cm,bottom=3cm,left=0cm,right=0cm}
+\title{Optics Cheat Paper for Mid}
+\author{陈稼霖 \and 45875852}
+\date{2018.11.21}
+\begin{document}\scriptsize
+\textbf{Chap1}
+
+\textbf{斯涅耳定律}$n_1\sin i_1=n_2\sin i_2$，光密$\to$光疏时\textbf{全反射角}$i_c=\arcsin\frac{n_2}{n_1}, n_2<n_1$
+
+\textbf{光纤}中光传播规律$\frac{d^2r}{dz^2}=\frac{n}{n_0^2\cos^2\theta_0}\frac{dn}{dr}=\frac{1}{2n_0^2\cos^2\theta_0}\frac{dn^2}{dr}$，其中$r$--到光纤轴的距离，$z$--沿轴传播的距离，$\theta$--与轴夹角，带有下标$0$ 为初始条件
+
+\textbf{三棱镜色散最小偏向角}条件$n=\frac{\sin\frac{\alpha+\delta_{\min}}{2}}{\sin\frac{\alpha}{2}}$，其中$\alpha$--顶角
+
+\textbf{辐射能通量}$\Psi=\int_0^{+\infty}\psi(\lambda)d\lambda$；\textbf{视见函数}$V(\lambda)=\frac{\Psi_{555}}{\Psi_\lambda}$，\textbf{光通量}$\Phi=K_{\max}\int_0^{+\infty}V(\lambda)\psi(\lambda)d\lambda$，单位流明$lm$，其中$K_{\max}=683lm/W$
+
+\textbf{发光强度}：沿某一方向单位立体角内发出的光通量，对点光源以$\bm{r}$ 为轴的立体角元$d\Omega$，$I=\frac{d\Phi}{d\Omega}$，单位坎德拉$cd=lm/sr$
+
+\textbf{亮度}：沿某一方向单位投影面积的发光强度，对面光源上面元$dS$沿$\bm{r}$方向立体角$\Omega$，$B=\frac{dI}{dS^*}=\frac{dI}{dS\cos\theta}$，单位$lm/(m^2\cdot sr)=10^{-4}lm/(cm^2\cdot sr)=10^{-4}\text{熙提}sb$，其中$\theta$-- 面元法向量与$\bm{r}$ 夹角
+
+\textbf{朗伯发光体}：$I\propto\cos\theta\Longrightarrow B=constant$
+
+\textbf{照度}：照射在单位面积上的光通量$E=\frac{d\Phi'}{dS'}$，单位勒克斯$lx=lm/m^2$或辐透$ph=lm/cm^2$，将$\Phi$换为$\Psi$则得\textbf{辐射照度}
+
+发光强度为$I$的\textbf{点光源}照到距离为$r$的$dS'$上，$E=\frac{I\cos\theta'}{r^2}$
+
+\textbf{面光源}$dS$（法线$n$）照到距离为$r$的$dS'$（法线$n'$）上，$E=\iint_{\text{光源表面}S}\frac{BdS\cos\theta\cos\theta'}{r^2}$
+
+\textbf{Chap2}
+
+\textbf{虚光程}：虚物（像）到透镜的光程$=-$物（像）方折射率$\times|$虚物（像）到透镜的距离$|$
+
+折射球面\textbf{齐明点}$\overline{QC}=\frac{n'}{n}r,\overline{Q'C}=\frac{n}{n'}r$，其中$C$球心，$C,Q,Q'$共线，做球面上任一点$M$，延长$QC$交球面于$A$，则$\frac{\sin\angle MQC}{\sin\angle MQ'C}=\frac{\overline{AQ'}}{\overline{QA}}$
+
+傍轴光线在\textbf{单球面上的折射}$\frac{n'}{s'}+\frac{n}{s}=\frac{n'-n}{r}$，$s$--物距，$s'$--像距，$n$--物方折射率，$n'$--像方折射率，$r$--球面曲率半径，物、像方焦距$f=\frac{nr}{n'-n},f'=\frac{n'}{n'-n}$，从而$\frac{f'}{s'}+\frac{f}{s}=1$，法则（入射光左$\to$右）：
+\begin{itemize}
+  \item[I] 物在顶点之左（实物），则$s>0$
+  \item[II] 像在顶点之右（实像），则$s'<0$
+  \item[II'] （反射）像在顶点之左（实像），则$s'>0$，$\frac{1}{s'}+\frac{1}{s}=-\frac{2}{r}$或$f=-\frac{r}{2}$
+  \item[III] 球心在顶点之右（凸球面），则$r>0$
+\end{itemize}
+
+\textbf{横向放大率}$V=\frac{y'}{y}=-\frac{ns'}{n's}$，其中$y$--物高，$y'$--像高；（反射）$V=-\frac{s'}{s}$
+\begin{itemize}
+  \item[IV] 像在光轴上方，$y>0$
+\end{itemize}
+
+\textbf{拉格朗日-亥姆霍兹定理}：$ynu=y'n'u'$，其中$u$-光线对于光轴的倾角
+\begin{itemize}
+  \item[V] 从光轴逆时针转到光线为小角时，$u>0$
+\end{itemize}
+
+\textbf{薄透镜成像（高斯形式）}$\frac{f'}{s}+\frac{f}{s}=1$，若$f=f'$，则$\frac{1}{s'}+\frac{1}{s}=\frac{1}{f}$；其中焦距$f=\frac{n}{\frac{n_L-n}{r_1}+\frac{n'-n_L}{r_2}},f'=\frac{n'}{\frac{n_L-n}{r_1}+\frac{n'-n_L}{r_2}}$，其中$n_L$--透镜折射率，$r_1,r_2$--物、像方曲率半径，当$n=n'=1$，磨镜者公式$f=f'=\frac{1}{(n_L-1)(\frac{1}{r_1}-\frac{1}{r_2})}$
+
+\textbf{薄透镜成像（牛顿形式）}$xx'=ff'$，其中$x,x'$--从焦点算起的物、像距
+\begin{itemize}
+  \item[VI] 当物在$F$之左，则$x>0$
+  \item[VII] 当像在$F'$之右，则$x'>0$
+\end{itemize}
+
+\textbf{横向放大率}$V=-\frac{ns'}{n's}=-\frac{fs'}{f's}=-\frac{f}{x}=-\frac{x'}{f'}$
+
+\textbf{密接透镜组光焦度}直接相加$P=P_1+P_2$，其中$P_{(1)/(2)}=\frac{1}{f_{(1)(2)}}$，单位屈光度$D=m^{-1}$，眼镜度数$=$屈光度$\times100$
+
+\textbf{作图法}：
+\begin{itemize}
+  \item[1] 当$n=n'$，通过光心$O$光线方向不变
+  \item[2] 通过$F(F')$光线，经透镜后（前）平行于光轴
+  \item[3] 通过物（像）方焦面上一点$P$的光线，经透镜前（后）和$OP$平行
+\end{itemize}
+
+\textbf{主点和主面}：$V=1$，对薄透镜，物、像方主点（面）重合，作图时主面之间光线一律平行光轴
+\begin{itemize}
+  \item[I'] 物或$F$在$H$之左，则$s(f)>0$
+  \item[II'] 像或$F'$在$H$之右，则$s'(f')>0$
+\end{itemize}
+
+\textbf{角放大率}$W=\frac{\tan u'}{\tan u}=-\frac{s}{s'}$；$VW=\frac{f}{f'}$；亥姆霍兹公式$yn\tan u=y'n'\tan u'$，拉格朗日-亥姆霍兹定理在非傍轴条件下的推广
+
+\textbf{理想光具组联合}$f=-\frac{f_1f_2}{\Delta},f'=-\frac{f_1'f_2'}{\Delta},X_H=f_1\frac{\Delta+f_1'+f_2}{\Delta}=f_1\frac{d}{\Delta},X_{H'}=f_2'\frac{\Delta+f_1'+f_2}{\Delta}=f_2'\frac{d}{\Delta}$，其中$\Delta$--前一透镜像方焦点和后一透镜物方焦点间距，$d$--两透镜间距
+\begin{itemize}
+  \item[VII] $F_2$在$F_1'$之右，则$\Delta>0$
+  \item[IX] $H_2$在$H_1'$之右，则$d>0$
+  \item[X] $H$在$H_1$之左，则$X_H>0$；$H'$在$H_2'$之右，则$X_{H'}>0$
+\end{itemize}
+
+\textbf{照相机}：$s\to+\infty,s'\approx f'$，光阑越小，则曝光时间越长，景深越大；$\frac{\delta x'}{\delta x}=-\frac{f^2}{x^2}$，从而给定$f$，$x$越小，景深越小
+
+\textbf{眼睛}：通过调节晶状体曲率实现调焦成像，物、像方焦距不等；睫状肌完全松弛和最紧张时清晰成像的点--远点和近点；成像大小与物的视角$w$成正比；最舒适的物距--明视距离$s_0=25cm$
+
+\textbf{放大镜和目镜}：焦距很小；物体视角最大值$w=\frac{y}{s_0}$；放大镜紧贴眼镜，物体放在放大镜焦点内一个小范围内，$0\geq x\geq-\frac{f^2}{s_0+f}$，$\because f\ll s_0$，$\therefore|x|\ll f$，物对光心所张视角即为像对眼所张视角$w'=\frac{y}{f}$；视角放大率$M=\frac{w'}{w}=\frac{s_0}{f}$
+
+\textbf{显微镜}：物镜焦距很小，目镜即为放大镜；视角放大率$M=\frac{w'}{w}=\frac{y_1/f_E}{y/s_0}=\frac{y_1}{y}\frac{s_0}{f_E}=V_OM_E$，其中$y_1$--物镜成像高，$f_E$ 目镜焦距，$V_0=\frac{y_1}{y}$--物镜横向放大率，$M_E=\frac{s_0}{f_E}$--目镜视角放大率；$V_O=-\frac{\Delta}{f_O}$，其中$\Delta$--$F_O'$ 与$F_E$间距即光学筒长，$f_O$--物镜焦距，从而$M=-\frac{s_0}{f_O}\frac{\Delta}{f_E}$
+
+\textbf{望远镜}：物镜焦距较大，$F_O'$和$F_E$几乎重合；视角放大率$M=\frac{w'}{w}=\frac{y_1/f_E}{-y_1/f_O}=-\frac{f_O}{f_E}$（倒像）
+
+\textbf{棱镜光谱仪}：点光源发射光线先经过准直管成为平行光线，被三棱镜色散后相同波长的光线仍为平行光，经过望远物镜汇聚成一点；焦色散本领$D=\frac{d\delta}{d\lambda}$；由于三棱镜厚度，谱线弯曲，在最小偏向角条件下，弯曲最小，此时$D=\frac{d\delta_{min}}{d\lambda}=\frac{d\delta_{min}}{dn}\frac{dn}{d\lambda}=(\frac{dn}{d\delta_{min}})^{-1}\frac{dn}{d\lambda}=\frac{2\sin\frac{\alpha}{2}}{\cos\frac{\alpha+\delta_{min}}{2}}\frac{dn}{d\lambda}$
+
+\textbf{（对轴上物点）孔径光阑}--对光束孔径限制最多的光阑，\textbf{入（出）射孔径角}$u_0,u_0'$--被孔径光阑限制的边缘光线与物（像）方光轴夹角，\textbf{入（出）射光瞳}-- 孔径光阑在物（像）方的共轭；对于不同的共轭点，可以有不同的孔径光阑和光瞳
+
+\textbf{（对于轴外物点）主光线}--通过入射光瞳中心$O$（自然通过出射光瞳中心$O'$）的光线；随着主光线倾角增大，最终其将被某光阑所先限制，该光阑即\textbf{视场光阑}；入（出）射视场角--物（像）方主光线$PO,O'P'$和光轴的倾角$w_0,w_0'$；视场--物平面上被$w_0$限制的范围；视场之外物点也可成暗像；\textbf{渐晕}--像平面内视场边缘逐渐昏暗，若要消除渐晕，可以使视场光阑与物平面重合；显微镜和望远镜的视场光阑与中间像重合，其相对于目镜的共轭位于像平面上；入（出）射窗--视场光阑在物（像）方的共轭
+
+\begin{itemize}
+  \item \textbf{（单色差）球差}--光轴上一物点发出的光线经球面折射后不再交于一点，高度为$h$的光线焦点与傍轴光线焦点间距$\delta s_h$，凸透镜在左为负；可通过配曲法即调节$\frac{r_1}{r_2}$或复合（凸凹）透镜消除某高度的球差
+  \item \textbf{彗差}--通过光瞳不同同心圆环的的光线所成像半径和圆心均不同，形成彗星状的光斑；可通过配曲法或复合透镜来消除
+  \item （阿贝正弦条件--消除球差前提下傍轴物点以大孔径光束成像的充要条件$ny\sin u=n'y'\sin u'$）\textbf{像散}--当物点远离光轴，出射光束的截面成椭圆，在子午焦线和弧矢焦线两处退化为互相垂直的直线，称散焦线，在两散焦线之间某处截面呈圆形，称最小模糊圆，该处光束最汇聚；通过复杂透镜组消除
+  \item \textbf{像场弯曲}--散焦线和最小模糊圆的轨迹为一曲面；通过在透镜前适当位置放置一光阑矫正
+  \item \textbf{畸变}--各处放大率不同；远光轴处放大率偏大则枕形畸变，反之桶形畸变；畸变种类与孔径光阑位置有关，光阑置于凸透镜前则桶形，后则枕形
+  \item \textbf{（色差）位置（轴向）/放大率（横向）色差}--由于不同波长光折射率不同导致焦距/放大率不同；消色差胶合透镜$P_1=(n_1-1)K_1,P=P_1+P_2=(n_1-1)K_1+(n_2-1)K_2,P_C=(n_1C-1)K_1+(n_{2C}-1)K_2,\bm{P_F-P_C=(n_{1F}-n_{1C})K_1+(n_{2F}-n_{2C})K_2=0}$，其中$K_1=\frac{1}{r_1}-\frac{1}{r_2},K_2=\frac{1}{r_2}-\frac{1}{r_3}$，对于非黏合的透镜组，$P=P_1+P_2-P_1P_2d=(n_1-1)(K_1+K_2)-(n-1)^2K_1K_2d,\frac{dP}{dn}=K_1+K_2-2(n-1)K_1K_2d=0,\bm{d=\frac{K_1+K_2}{2(n-1)K_1K_2d}=\frac{P_1+P_2}{2P_1P_2}=\frac{f_1+f_2}{2}}$
+\end{itemize}
+
+$B=\frac{E}{\pi}$，$E$--屏上像的照度，$B$--观察者看到像的亮度
+
+\textbf{像的亮度}$\Phi=\int B\sigma\cos u\Omega=\int_0^{u_0}B\sigma\cos u\sin udu\int_0^{2\pi}d\varphi$，对朗伯体，$\Phi=\pi B\sigma\sin^2u_0,\frac{B'}{B}=\frac{\Phi'\sin^2u_0\sigma}{\Phi\sin^2u_0'\sigma'}$，透光系数$k=\frac{\Phi'}{\Phi}\leq1$，利用正弦条件$ny\sin u_0=n'y'\sin u_0'$和$\frac{\sigma}{\sigma'}=\frac{y^2}{y'^2}$，故$\frac{B'}{B}=k(\frac{n'}{n})^2$，其中$\sigma$--物的面积，$\sigma'$--像的面积
+
+\textbf{像的照度}$E=\frac{\Phi'}{\sigma'}=\pi B'\sin^2u_0'=k\pi B(\frac{n'}{n})^2\sin^2u_0'=k\pi B\frac{\sin^2u_0}{V^2}\approx k\pi B\frac{u_0^2}{V^2}$
+
+\textbf{拓展光源天然主观亮度}$H_0\triangleq B=(\frac{n'}{n})^2\frac{k\pi B}{4}(\frac{D_e}{f})^2$，其中$D_e$--瞳孔直径，$f$--眼睛焦距
+
+\textbf{Chap3}
+
+\textbf{光波}--横波用标量波处理$U(P,t)=A(P)\cos[\omega t-\varphi(P)]\Leftrightarrow\widetilde{U}=A(P)e^{\pm i[\omega t-\varphi(P)]}=\widetilde{U}(P)e^{-i\omega t}\Leftrightarrow U(P,t)=A(P)\cos[\omega t-\varphi(P)]$，为方便选$-$；\textbf{光强}$I(P)=[A(P)]^2=\widetilde{U}*(P)\widetilde{U}(P)$
+
+\textbf{光波叠加}$U(P,t)=U_1(P,t)+U_2(P,t)$，对同频率$\widetilde{U}(P,t)=\widetilde{U}_1(P,t)+\widetilde{U}_2(P,t)$；强度$I(P)=[A_1(P)]^2+[A_2(P)]^2+2\sqrt{I_1(P)I_2(P)}\cos\delta(P)$，其中$P$点相位差$\delta(P)=\varphi_1(P)-\varphi_2(P)$；若振源等强$I(P)=2A^2[1+\cos\delta(P)]=4A^2\cos^2\frac{\delta(P)}{2}$，其中$\delta(P)=\varphi_1(P)-\varphi_2(P)=\varphi_{10}-\varphi_{20}+\frac{2\pi(r_1-r_2)}{\lambda}$；若振源同相$\delta(P)=\frac{2\pi(r_1-r_2)}{\lambda}$；波程差$\Delta L=r_1-r_2$
+
+\textbf{杨氏双缝干涉条纹间隔}$\Delta x=\frac{\lambda D}{d}$；\textbf{涅菲尔双镜}$\Delta x=\frac{\lambda(B+C)}{2\alpha B}$，其中$B$--光源与双镜交线距离，$C$ -- 双镜交线与屏幕距离，$\alpha$--双镜夹角；\textbf{涅菲尔双棱镜}$\Delta x=\frac{\lambda(B+C)}{2(n-1)\alpha B}$，其中$B$--光源到棱镜距离，$C$--棱镜到屏幕距离，$n$--棱镜折射率，$\alpha$--棱镜底角；\textbf{劳埃德镜}$\Delta x=\frac{\lambda D}{2a}$，其中$D$-- 光源到屏幕距离，$a$-- 光源到镜面距离；\textbf{条纹位移与点光源位移关系}$\delta x=-\frac{D}{R}\delta s$
+
+\textbf{干涉条纹衬比度}$\gamma=\frac{I_{max}-I_{min}}{I_{max}+I_{min}}$；\textbf{对杨氏干涉}$I(x)\sim1+\cos\delta(x)=1+\cos(\frac{2\pi d}{\lambda D}x)=1+\cos(\frac{2\pi x}{\Delta x})$，若光源移动$\delta s$则$I(x)\sim1+\cos[\frac{2\pi d}{\lambda D}(x-\delta x)]=1+\cos[\frac{2\pi d}{\lambda D}(x+\frac{D}{R}\delta s)]=1+\cos\frac{2\pi x}{\Delta x}\cos(\frac{2\pi d}{\lambda R}\delta s)-\sin\frac{2\pi x}{\Delta x}\sin(\frac{2\pi d}{\lambda R}\delta s)$；\textbf{对宽度为$b$的光源}$I(x)=\frac{I_0}{b}\int_{-\frac{b}{2}}^{\frac{b}{2}}[1+\cos\frac{2\pi x}{\Delta x}\cos(\frac{2\pi d}{\lambda R}\delta s)-\sin\frac{2\pi x}{\Delta x}\sin(\frac{2\pi d}{\lambda R}\delta s)]d(\delta s)=I_0[1+\frac{\sin(\pi db/\lambda R)}{\pi db/\lambda R}\cos\frac{2\pi x}{\Delta x}]$，从而$I_{max}=1+|\frac{\sin u}{u}|,I_{min}=1-|\frac{\sin u}{u}|$，衬比度$\gamma=|\frac{\sin u}{u}|$，其中$u=\frac{\pi db}{\lambda R}$
+
+
+\textbf{杨氏实验光源极限宽度}$b_0\approx\frac{R}{d}\lambda$；光场中\textbf{相干范围的横向线度}$d\approx\frac{R\lambda}{b}=\frac{\lambda}{\varphi}$，其中$\varphi$-- 光源宽度对缝张角；\textbf{相干范围孔径角}$\Delta\theta_0\triangleq\frac{d}{R}\approx\frac{\lambda}{b}$
+
+\textbf{薄膜等厚干涉光程差}$\Delta L=\frac2nh\cos i$，其中$n$--膜折射率，$h$-- 膜厚度，$i$--膜表面折射角，亮纹$\Delta L=k\lambda$，暗纹$\Delta L=(k+\frac{1}{2})\lambda$，条纹宽度$\Delta x=\frac{\lambda}{2\cos i}$；正入射时$\Delta L\approx2nh$，\textbf{相邻条纹对应厚度差}$\Delta h=\frac{\lambda}{2n}$
+
+\textbf{劈形薄膜等厚干涉条纹宽度}$\Delta x=\frac{\lambda}{2\alpha}$，其中$\lambda$--膜内的光波长，$\alpha$--劈的顶角；$\delta(\Delta L)=-2nh\sin i
+\delta i+2n\cos i\delta h$，实际直接观察时条纹向劈尖凸；通过按压法可判断高低
+
+\textbf{牛顿环}半径$r_k^2=kR\lambda$，其中$R$--透镜曲率半径，$\lambda$--空气膜中的光波长，$R=\frac{r_{k+m}^2-r_k^2}{m\lambda}$
+
+当\textbf{增透膜}为低膜，即$n_1<n<n_2$，且$n=\sqrt{n_1n_2}$，膜厚$(\frac{k}{2}+\frac{1}{4})\lambda$时，完全消反射，其中$n$--增透膜折射率，$n_1$--空气折射率，$n_2$--介质折射率；高反射膜，换成等厚度高膜，即$n_1<n<n_2$，多次介质高反射膜效果更佳
+
+\textbf{薄膜等厚干涉光程差}$\Delta L=2nh\cos i$，第$k$级条纹$\Delta L=k\lambda\Longrightarrow\cos i_k=\frac{k\lambda}{2nh}$，故$\cos i_{k+1}-\cos i_{k}=\frac{\lambda}{2nh}$，又$\cos i_{k+1}-\cos i_{k}\approx(\frac{d\cos i}{di})_{i=i_k}=-\sin i_k(i_{k+1}-i_{k})$，从而倾角较小时$r_{k+1}-r_{k}\propto i_{k+1}-i_{k}=\frac{-\lambda}{2nh\sin i_k}$；$i_k$越大，$h$越大，则$|\Delta r|$越小，条纹越密；$h$增大，则环形条纹外扩；使用拓展光源，衬度不受影响
+
+拓展光源导致非定域干涉问题，在定域中心层衬度最大，其附近有干涉条纹，但由于瞳孔的的限制，较大的拓展光源并不妨碍观察到图像的衬度
+
+\textbf{迈克尔逊干涉仪移过条纹数目与反射镜移动距离关系}$l=N\frac{\lambda}{2}$
+
+\textbf{光源单色性对迈氏干涉衬度影响}$I(\Delta L)=I_0[1+\cos\delta]=I_0[1+\cos k\Delta L]$，其中$k=\frac{2\pi}{\lambda}$，\textbf{等强双线}$I(\Delta L)=I_1(\Delta L)+I_2(\Delta L)=2I_0[1+\cos(\frac{\Delta k}{2}\Delta L)\cos(k\Delta L)]$，其中$\Delta k=k_1-k_2\ll k=\frac{1}{2}(k_1+k_2)$，故衬比度$\gamma=|\cos(\frac{\Delta k}{2}\Delta L)|$，从最强到最弱$\Delta L=N_1\lambda_1=N_2\lambda_2=(N-\frac{1}{2})\lambda_2\Longrightarrow N_1=\frac{\lambda_2}{2(\lambda_2-\lambda_1)}=\frac{\lambda}{2\Delta\lambda}$，\textbf{衬度变化空间频率}$\frac{1}{2N_1\lambda_1}=\frac{\lambda_2-\lambda_1}{\lambda_1\lambda_2}\approx\frac{\Delta\lambda}{\lambda^2}(=\frac{\Delta k}{2\pi})$；谱密度积分得总光强$I_0\int_0^\infty i(\lambda)d\lambda=\frac{1}{\pi}\int_0^\infty i(k)dk$，\textbf{单色线宽}$I(\Delta L)=\frac{1}{\pi}\int_0^\infty i(k)[1+\cos k\Delta L]dk=I_0+\frac{1}{\pi}\int_0^\infty i(k)\cos(k\Delta L)dk$，若$i(k)$仅在$k_0\pm\Delta k/2$内等于常数$\pi I_0/\Delta k$，则$I(\Delta L)=I_0[1+\frac{\sin(\Delta k\Delta L/2)}{\Delta k\Delta L/2}\cos(k_0\Delta L)]$，故衬度$\gamma=|\frac{\sin(\Delta k\Delta L/2)}{\Delta k\Delta L/2}|$，超过最大光程差$\Delta L_{max}=\frac{2\pi}{\Delta k}=\frac{\lambda^2}{|\Delta\lambda|}$，条纹不可见
+
+$l_0=v\tau_0=\frac{c}{n}\tau_0$或$L_0=c\tau_0$，其中$L_0$--\textbf{相干长度}，$\tau_0$--\textbf{相干时间}；若$a(k)$仅在$k_0\pm\Delta k/2$内等于常数$\pi\widetilde{A}/\Delta k$，则波列长度$\Delta L\approx\frac{\lambda^2}{\Delta\Lambda},\Delta\nu=-c\frac{\Delta\lambda}{\lambda^2}\Longrightarrow\bm{\tau_0\Delta\nu\approx1}$
+
+\textbf{法布里-珀罗干涉仪}斯托克斯关系$r=-r',r^2+tt'=1$，$\widetilde{U}_1=-Ar',\widetilde{U}_2=Atr't'e^{i\delta},\widetilde{U}_n=Atr'^{2n-3}t'e^{(n-1)i\delta},\widetilde{U}_1'=Att',\widetilde{U}_n'=Atr'^{2n-2}t'e^{(n-1)i\delta}\Longrightarrow \widetilde{U}_T=\frac{Att'}{1-r^2e^{i\delta}}\Longrightarrow I_T=\widetilde{U}_T^*\widetilde{U}_T=\frac{I_0(1-r^2)^2}{1-2r^2\cos\delta+r^4}=\frac{I_0}{1+\frac{4R\sin^2(\delta/2)}{(1-R)^2}}$，其中$\delta=\frac{2\pi}{\lambda}\Delta L=\frac{4\pi nh\cos i}{\lambda},R=r^2$，$I_R=I_0-I_T=\frac{I_0}{1+\frac{(1-R)^2}{4R\sin^2(\delta/2)}}$；当$R\ll1$，$I_T=I_0[1-2R(1-\cos\delta)],I_R=2RI_0[1-\cos\delta]$；半峰宽$\varepsilon\triangleq\Delta\delta=\frac{2(1-R)}{\sqrt{R}}$，根据$\delta=4\pi nh\cos i/\lambda$，若单色光固定$\lambda$，则\textbf{角宽度}$|\Delta i_k|=\frac{\lambda\varepsilon}{4\pi nh\sin i_k}=\frac{\lambda}{4\pi nh\sin i_k}\frac{2(1-R)}{\sqrt{R}}$，腔长$h$越大，条纹越细锐，若非单色光固定$i=0$，则仅特定波长$\lambda_k$附近的光出现极大，每条谱线称一纵模，
+\textbf{纵模间隔}$\nu_k=\frac{c}{\lambda_k}=\frac{kc}{2nh}\Longrightarrow\Delta\nu=\frac{c}{2nh}$，\textbf{单模线宽}$\varepsilon=d\delta=-4\pi nh\cos id\lambda/\lambda^2\Longrightarrow\Delta\lambda_k=\frac{\lambda^2\varepsilon}{4\pi nh\cos i}=\frac{\lambda}{\pi k}\frac{1-R}{\sqrt{R}}\Longrightarrow\Delta\nu_k=\frac{c\Delta\lambda}{\lambda^2}=\frac{c}{\pi k\lambda}\frac{1-R}{\sqrt{R}}$
+F-P干涉仪色分辨本领$2nh\cos i_k=k\lambda\Longrightarrow\delta i_k=\frac{k}{2nh\sin}\delta\lambda$，最小波长间隔$\delta\lambda=\frac{\lambda}{\pi k}\frac{1-R}{\sqrt{R}}$，\textbf{色分辨本领}$\frac{\lambda}{\delta\lambda}=\pi k\frac{\sqrt{R}}{1-R}$
+\end{document}
